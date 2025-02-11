@@ -1,6 +1,6 @@
 
 # IP Monitor & Notify System
- <div> <p align="center">中文 | <a href="./docs/README.EN.md">English</a> <br></p></div>
+ <div> <p align="center">中文 | <a href="./README.EN.md">English</a> <br></p></div>
 一个用于监控本机所在网络的公网IP变化并自动通知的系统。当检测到IP地址变化时，系统会通过微信推送通知，并自动更新Cloudflare DNS记录。
 
 ## 功能特点
