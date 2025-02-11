@@ -1,0 +1,46 @@
+# IP检查相关配置
+ip_check:
+  # IP查询服务地址
+  api_url: "http://cip.cc"
+  # IP地址存储文件路径
+  last_ip_file: "./last_ip.txt"
+  # IP匹配的正则表达式
+  ip_pattern: "IP\\s*:\\s*([\\d\\.]+)"
+  # 最大重试次数
+  max_retries: 3
+  # 重试等待时间（秒）
+  retry_delay: 2
+
+# 通知相关配置，相关参数请到WxPubsher官网查看https://wxpusher.zjiecode.com/docs/#/
+notification:
+  # 通知脚本路径
+  script_path: "SendMessageByWxPusher.py"
+  # 是否启用通知
+  enabled: true
+  # WxPusher配置
+  wxpusher:
+    app_token: "AT_clZ"
+    uids: ["UID_q1"]
+  # 服务端口配置
+  services:
+    s1_port: 系统1访问端口
+-   s2_port: 系统2访问端口
+
+# Cloudflare配置，相关参数请到Cloudflare官网查看https://developers.cloudflare.com/api/
+cloudflare:
+  # API Token
+  api_token: "4c8w"
+  # Zone ID
+  zone_id: "161"
+  # 域名记录
+  record_name: "xxx.com"
+  # DNS记录类型
+  dns_type: "A"
+  # TTL值（秒）
+  ttl: 120
+  # 是否使用Cloudflare代理
+  proxied: false
+  # 最大重试次数
+  max_retries: 3
+  # 重试等待时间（秒）
+  retry_delay: 2 
