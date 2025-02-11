@@ -18,10 +18,10 @@
 ├── config.yaml # 配置文件
 ├── last_ip.txt # IP记录文件
 └── logs/ # 日志目录
-├── ip_monitor.log # IP监控日志
-├── notification.log # 通知日志
-├── cloudflare_dns.log # DNS更新日志
-└── cron.log # 定时任务日志
+    ├── ip_monitor.log # IP监控日志
+    ├── notification.log # 通知日志
+    ├── cloudflare_dns.log # DNS更新日志
+    └── cron.log # 定时任务日志
 ```
 
 ## 安装步骤
